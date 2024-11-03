@@ -58,3 +58,18 @@ function iniciarTemporizador() {
     segundosElement.style.display = 'inline';
     mensajeElement.style.display = 'none';
   }
+
+  function mostrarMensajeFin() {
+    puntosElement.style.display = 'none';
+    puntosSegundosElement.style.display = 'none';
+    horasElement.style.display = 'none';
+    minutosElement.style.display = 'none';
+    segundosElement.style.display = 'none';
+    mensajeElement.style.display = 'inline';
+  }
+
+  function actualizarDisplay(horas, minutos, segundos) {
+    horasElement.textContent = horas < 10 ? "0" + horas : horas;
+    minutosElement.textContent = minutos < 10 ? "0" + minutos : minutos;
+    segundosElement.textContent = segundos < 10 ? "0" + segundos : segundos;
+  }
