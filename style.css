@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  main {
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.684),
+        rgba(242, 242, 242, 0.326)
+      ),
+      url("https://static.vecteezy.com/system/resources/previews/001/268/938/non_2x/gray-gradient-minimal-wavy-design-vector.jpg") no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #7d2ae8;
+}
+
+
+.container {
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+  }
+  
+.container .tiempo {
+    height: 100px;
+    width: auto;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 6px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.30);
+}
+
+.container .tiempo {
+    width: auto;
+    margin: 5%;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    color: #333;
+}
+
+.mensaje {
+    font-family: sans-serif;
+    font-size: 35px; 
+    color: #7d2ae8;
+}
+
+.tiempo span.puntos {
+    width: auto;
+}
+
+.tiempo span.puntos-segundos,
+.tiempo span.segundos {
+    width: auto;
+    color: #7d2ae8;
+}
+
+.container .botones {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.botones button {
+    margin-right: 5px;
+    padding: 6px 16px;
+    outline: none;
+    border: none;
+    color: #7d2ae8;
+    background-color: #fff;
+    font-size: 19px;
+    font-weight: 500;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.4);
+}
+
+button:hover{
+    color: #fff;
+    background-color: #8b41ec;
+}
+
+.botones button.active,
+.botones button.stopActive {
+    pointer-events: none;
+    opacity: .7;
+}
