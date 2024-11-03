@@ -40,3 +40,21 @@ function iniciarTemporizador() {
       pausar = false;
     }
   }
+
+  function reestablecer() {
+    clearInterval(descontarTiempo);
+    descontarTiempo = null;
+    tiempo = duracion;
+    pausar = false;
+    mostrarTiempo();
+    actualizarDisplay(0, 0, 0);
+  }
+
+  function mostrarTiempo() {
+    puntosElement.style.display = 'inline';
+    puntosSegundosElement.style.display = 'inline';
+    horasElement.style.display = 'inline';
+    minutosElement.style.display = 'inline';
+    segundosElement.style.display = 'inline';
+    mensajeElement.style.display = 'none';
+  }
