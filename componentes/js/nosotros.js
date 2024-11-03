@@ -1,4 +1,3 @@
-
 const integrantes = [
   {
     nombreApellido: "Micaela Cancino",
@@ -32,7 +31,7 @@ const integrantes = [
 const containerCard = document.getElementById("containerCard");
 
 function cards() {
-  integrantes.forEach((integrante) => {
+  integrantes.map((integrante) => {
     const cardHTML = `
       <div class="card cardUs">
        <div class="card-body">
@@ -48,6 +47,7 @@ function cards() {
                 ></a>
       </div>
        </div>
+       </div> 
     `;
     containerCard.innerHTML += cardHTML;
   });
