@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+  }
+  
+  main {
+    /* font-family: "Jost", sans-serif; */
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.684),
+        rgba(242, 242, 242, 0.326)
+      ),
+      url("https://static.vecteezy.com/system/resources/previews/001/268/938/non_2x/gray-gradient-minimal-wavy-design-vector.jpg") no-repeat center center fixed;
+    background-size: cover;
+  }
