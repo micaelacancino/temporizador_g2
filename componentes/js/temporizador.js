@@ -22,3 +22,21 @@ function iniciarTemporizador() {
       alert("Por favor, ingrese un número válido de segundos.");
     }
   }
+
+  function ejecutarTemporizador() {
+    clearInterval(descontarTiempo); // Limpia cualquier temporizador previo
+    descontarTiempo = setInterval(actualizarTemporizador, 1000);
+  }
+  
+  function pausarTiempo() {
+    clearInterval(descontarTiempo);
+    descontarTiempo = null;
+    pausar = true;
+  }
+
+  function continuarTiempo() {
+    if (pausar && !descontarTiempo) {
+      descontarTiempo = setInterval(actualizarTemporizador, 1000);
+      pausar = false;
+    }
+  }
