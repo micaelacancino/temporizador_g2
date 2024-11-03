@@ -1,3 +1,4 @@
+
 const integrantes = [
   {
     nombreApellido: "Micaela Cancino",
