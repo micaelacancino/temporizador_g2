@@ -2,6 +2,7 @@ const header = document.querySelector(".header");
 
 header.innerHTML = `<nav class= "navbar navbar-expand-lg fixed-top p-4"> 
  <div class="container-fluid">
+   <h4>Temporizador 🕑</h4>
    <button
      class="navbar-toggler"
      type="button"
