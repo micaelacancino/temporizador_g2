@@ -16,14 +16,14 @@ main {
     background-size: cover;
 }
 
-.container {
+.container-temporizador {
     user-select: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.container .tiempo {
+.container-temporizador .tiempo {
     height: 100px;
     width: auto;
     background-color: #fff;
@@ -34,7 +34,7 @@ main {
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.30);
 }
 
-.container .tiempo {
+.container-temporizador .tiempo {
     width: auto;
     margin: 5%;
     text-align: center;
@@ -59,7 +59,7 @@ main {
     color: #7d2ae8;
 }
 
-.container .botones {
+.container-temporizador .botones {
     text-align: center;
     margin-top: 20px;
 }
