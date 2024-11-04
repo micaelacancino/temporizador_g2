@@ -15,17 +15,18 @@ const integrantes = [
     imagen:
       "https://media.licdn.com/dms/image/v2/D4E03AQH8NPDXm9wAwA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1709913104394?e=2147483647&v=beta&t=71FLasRVGFgc5dawftxFa1fSds8D2uEhBT0ox_84kus",
     gitHub: "https://github.com/nahuel-11",
-    linkedin: "https://github.com/nahuel-11",
+    linkedin: "https://www.linkedin.com/in/ramiro-romano/",
   },
   {
     nombreApellido: "Ignacio Dupuy",
     descripcion:
-      " Hola! Mi nombre es Ignacio, soy estudiante de ingenieria ens istemas de información, me gusta aprender idiomas y exploralas infinitas posibilidades que ofrece el mundo de la tecnología.",
+      " Hola! Mi nombre es Ignacio, soy estudiante de programación en Rolling Code School, me gusta aprender sobre las nuevas tecnologias y exploralas infinitas posibilidades que ofrece.",
     imagen:
-      "https://el-pais.brightspotcdn.com/uploads/2020/12/09/5fd174e261901.png",
+      "https://img.freepik.com/vector-premium/lindo-personaje-avatar-hombre-joven_273456-22.jpg?w=2000",
     gitHub: "https://github.com/ignas11",
     linkedin: "https://github.com/ignas11",
   },
+ 
 ];
 
 const containerCard = document.getElementById("containerCard");
