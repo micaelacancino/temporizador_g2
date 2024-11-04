@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+
+    background-color: #444;
+}
+
+h1{
+    height: 80vh;
+}
+
+.error404 {
+    background: 
+        url("https://static.vecteezy.com/system/resources/previews/001/268/938/non_2x/gray-gradient-minimal-wavy-design-vector.jpg") no-repeat center center fixed;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 200px;
+}
