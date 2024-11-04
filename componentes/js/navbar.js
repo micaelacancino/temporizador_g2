@@ -2,7 +2,7 @@ const header = document.querySelector(".header");
 
 header.innerHTML = `<nav class= "navbar navbar-expand-lg fixed-top p-4"> 
  <div class="container-fluid">
-   <h4>Temporizador 🕑</h4>
+   <h4> <a href="#">Temporizador 🕑</a></h4>
    <button
      class="navbar-toggler"
      type="button"
@@ -24,7 +24,7 @@ header.innerHTML = `<nav class= "navbar navbar-expand-lg fixed-top p-4">
        </li>
 
        <li class="nav-item jost">
-         <a class="nav-link" href="#footer">Contacto</a>
+         <a class="nav-link" href="/componentes/pages/404.html">Contacto</a>
        </li>
 
        <li class="nav-item jost">
