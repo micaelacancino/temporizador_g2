@@ -1,0 +1,102 @@
+.container-temporizador {
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.container-temporizador .tiempo {
+    height: 130px;
+    width: auto;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 500;
+    border-radius: 6px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.30);
+    color: #333;
+}
+
+.tiempo span.puntos {
+    width: auto;
+}
+
+.tiempo span.puntos-segundos,
+.tiempo span.segundos {
+    width: auto;
+    color: #7d2ae8;
+}
+
+.mensaje {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 35px;
+    color: #7d2ae8;
+}
+
+.container-temporizador .botones {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.botones button {
+    margin-right: 5px;
+    padding: 6px 16px;
+    outline: none;
+    border: none;
+    color: #7d2ae8;
+    background-color: #fff;
+    font-size: 19px;
+    font-weight: 500;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.4);
+}
+
+button:hover {
+    color: #fff;
+    background-color: #8b41ec;
+}
+
+.botones button.active,
+.botones button.stopActive {
+    pointer-events: none;
+    opacity: .7;
+}
+
+
+
+
+@media (max-width: 767px) {
+
+    .container-temporizador {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .container-temporizador .tiempo {
+        height: 100px;
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        font-size: 40px;
+        font-weight: 500;
+        border-radius: 6px;
+        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.30);
+        color: #333;
+    }
+
+    .botones{
+        display: block;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+}

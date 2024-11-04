@@ -24,7 +24,7 @@ function iniciarTemporizador() {
 }
 
 function ejecutarTemporizador() {
-    clearInterval(descontarTiempo); // Limpia cualquier temporizador previo
+    clearInterval(descontarTiempo);
     descontarTiempo = setInterval(actualizarTemporizador, 1000);
 }
 
