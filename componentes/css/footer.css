@@ -7,23 +7,18 @@ body {
   main {
     flex-grow: 1;
   }
-  
+
   .colorFooter {
     background-color:rgba(234, 231, 231, 0.992);
   }
   
-  .logoSize {
-    width: 20vh;
-    height: 16vh;
-  }
-  
-  .socialSize {
-    font-size: 23px;
-  }
   
   a {
     text-decoration: none;
-    color: rgb(255, 0, 0);
+
+    color: black;
+
+
   }
   
   .jost {
@@ -32,3 +27,4 @@ body {
     font-weight: 100px;
     font-style: normal;
   }
+
