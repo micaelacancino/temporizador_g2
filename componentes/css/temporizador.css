@@ -81,7 +81,7 @@ button:hover {
 
     .container-temporizador .tiempo {
         height: 100px;
-        width: 70%;
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -93,10 +93,58 @@ button:hover {
         color: #333;
     }
 
-    .botones{
-        display: block;
-        flex-wrap: wrap;
+    button:hover {
+        color: #fff;
+        background-color: #8b41ec;
+    }
+
+    button {
+        display: flex;
+        align-items: center;
         justify-content: center;
-        
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+
+    .container-temporizador {
+        width: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .container-temporizador .tiempo {
+        height: 100px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        font-size: 40px;
+        font-weight: 500;
+        border-radius: 6px;
+        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.30);
+        color: #333;
+    }
+
+    .botones {
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    button:hover {
+        color: #fff;
+        background-color: #8b41ec;
+    }
+
+    button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
