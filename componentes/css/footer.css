@@ -12,11 +12,26 @@ main {
   background-color: rgba(234, 231, 231, 0.992);
 }
 
-
-a {
+h4 a{
   text-decoration: none;
   color: black;
 }
+
+h5{
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+ul li a {
+  text-decoration: underline;
+  color: black;
+  margin-top: 5px;
+  margin-right: 20px;
+}
+
+
 
 .jost {
   font-family: "Jost", sans-serif;
