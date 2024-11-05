@@ -26,7 +26,7 @@ const integrantes = [
     gitHub: "https://github.com/ignas11",
     linkedin: "https://github.com/ignas11",
   },
- 
+
 ];
 
 const containerCard = document.getElementById("containerCard");

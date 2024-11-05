@@ -31,6 +31,7 @@
 }
 
 .mensaje {
+    margin: 0;
     font-family: sans-serif;
     text-align: center;
     font-size: 35px;
@@ -43,6 +44,7 @@
 }
 
 .botones button {
+    text-align: center;
     margin-right: 5px;
     padding: 6px 16px;
     outline: none;
@@ -67,7 +69,17 @@ button:hover {
     opacity: .7;
 }
 
+button:disabled {
+    background-color: #cccccc;
+    color: #666666;           
+    cursor: not-allowed;       
+}
 
+
+button:disabled:hover {
+    background-color: #cccccc;
+    color: #666666;
+}
 
 
 @media (max-width: 767px) {
@@ -91,6 +103,14 @@ button:hover {
         border-radius: 6px;
         box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.30);
         color: #333;
+    }
+
+    .mensaje {
+        margin: 0;
+        font-family: sans-serif;
+        text-align: center;
+        font-size: 25px;
+        color: #7d2ae8;
     }
 
     button:hover {

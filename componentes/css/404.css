@@ -10,12 +10,12 @@ body {
     background-color: #444;
 }
 
-h1{
+h1 {
     height: 80vh;
 }
 
 .error404 {
-    background: 
+    background:
         url("https://static.vecteezy.com/system/resources/previews/001/268/938/non_2x/gray-gradient-minimal-wavy-design-vector.jpg") no-repeat center center fixed;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;

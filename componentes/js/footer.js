@@ -1,6 +1,6 @@
 const footer = document.querySelector(".footer");
 
-footer.innerHTML = `<section class="container-fluid text-center">
+footer.innerHTML = `<section class="container-fluid  text-center">
         <article class="row my-4 my-md-2 pt-md-4">
           <div class="col-sm-12 col-md-6 mb-2 mb-md-0">    
             <h4> <a href="/index.html">Temporizador 🕑</a></h4>

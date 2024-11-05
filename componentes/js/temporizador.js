@@ -10,6 +10,9 @@ const minutosElement = document.querySelector('.minutos');
 const segundosElement = document.querySelector('.segundos');
 const mensajeElement = document.querySelector('.mensaje')
 mensajeElement.style.display = 'none';
+document.getElementById("btnPausar").disabled = true;
+document.getElementById("btnContinuar").disabled = true;
+document.getElementById("btnRestablecer").disabled = true;
 
 function iniciarTemporizador() {
     duracion = parseInt(prompt("Ingrese el tiempo en segundos para el temporizador:"));
@@ -18,6 +21,10 @@ function iniciarTemporizador() {
         tiempo = duracion;
         mostrarTiempo();
         ejecutarTemporizador();
+        document.getElementById("btnIniciar").disabled = true;
+        document.getElementById("btnPausar").disabled = false;
+        document.getElementById("btnRestablecer").disabled = false;
+        document.getElementById("btnContinuar").disabled = true;
     } else {
         alert("Por favor, ingrese un número válido de segundos.");
     }
@@ -26,28 +33,6 @@ function iniciarTemporizador() {
 function ejecutarTemporizador() {
     clearInterval(descontarTiempo);
     descontarTiempo = setInterval(actualizarTemporizador, 1000);
-}
-
-function pausarTiempo() {
-    clearInterval(descontarTiempo);
-    descontarTiempo = null;
-    pausar = true;
-}
-
-function continuarTiempo() {
-    if (pausar && !descontarTiempo) {
-        descontarTiempo = setInterval(actualizarTemporizador, 1000);
-        pausar = false;
-    }
-}
-
-function reestablecer() {
-    clearInterval(descontarTiempo);
-    descontarTiempo = null;
-    tiempo = duracion;
-    pausar = false;
-    mostrarTiempo();
-    actualizarDisplay(0, 0, 0);
 }
 
 function mostrarTiempo() {
@@ -59,13 +44,35 @@ function mostrarTiempo() {
     mensajeElement.style.display = 'none';
 }
 
-function mostrarMensajeFin() {
-    puntosElement.style.display = 'none';
-    puntosSegundosElement.style.display = 'none';
-    horasElement.style.display = 'none';
-    minutosElement.style.display = 'none';
-    segundosElement.style.display = 'none';
-    mensajeElement.style.display = 'inline';
+function pausarTiempo() {
+    clearInterval(descontarTiempo);
+    descontarTiempo = null;
+    pausar = true;
+    document.getElementById("btnPausar").disabled = true;
+    document.getElementById("btnContinuar").disabled = false;
+    
+}
+
+function continuarTiempo() {
+    if (pausar && !descontarTiempo) {
+        descontarTiempo = setInterval(actualizarTemporizador, 1000);
+        pausar = false;
+        document.getElementById("btnPausar").disabled = false;
+        document.getElementById("btnContinuar").disabled = true;
+    }
+}
+
+function reestablecer() {
+    clearInterval(descontarTiempo);
+    descontarTiempo = null;
+    tiempo = duracion;
+    pausar = false;
+    mostrarTiempo();
+    actualizarDisplay(0, 0, 0);
+    document.getElementById("btnIniciar").disabled = false;
+    document.getElementById("btnPausar").disabled = true;
+    document.getElementById("btnContinuar").disabled = true;
+    document.getElementById("btnRestablecer").disabled = true;
 }
 
 function actualizarDisplay(horas, minutos, segundos) {
@@ -88,9 +95,22 @@ function actualizarTemporizador() {
         setTimeout(() => {
             if (confirm("¿Deseas ingresar un nuevo valor para el temporizador?")) {
                 iniciarTemporizador();
+                document.getElementById("btnPausar").disabled = false;
+            } else {
+                document.getElementById("btnIniciar").disabled = false;
+                document.getElementById("btnPausar").disabled = false;
             }
-        }, 3000);
+        }, 2000);
     }
+}
+
+function mostrarMensajeFin() {
+    puntosElement.style.display = 'none';
+    puntosSegundosElement.style.display = 'none';
+    horasElement.style.display = 'none';
+    minutosElement.style.display = 'none';
+    segundosElement.style.display = 'none';
+    mensajeElement.style.display = 'inline';
 }
 
 document.getElementById("btnIniciar").addEventListener("click", iniciarTemporizador);
