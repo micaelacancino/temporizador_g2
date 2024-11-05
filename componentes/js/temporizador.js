@@ -50,7 +50,7 @@ function pausarTiempo() {
     pausar = true;
     document.getElementById("btnPausar").disabled = true;
     document.getElementById("btnContinuar").disabled = false;
-    
+
 }
 
 function continuarTiempo() {
@@ -95,12 +95,17 @@ function actualizarTemporizador() {
         setTimeout(() => {
             if (confirm("¿Deseas ingresar un nuevo valor para el temporizador?")) {
                 iniciarTemporizador();
-                document.getElementById("btnPausar").disabled = false;
-            } else {
                 document.getElementById("btnIniciar").disabled = false;
-                document.getElementById("btnPausar").disabled = false;
+                document.getElementById("btnPausar").disabled = true;
+                document.getElementById("btnContinuar").disabled = true;
+                document.getElementById("btnRestablecer").disabled = true;
+            } else {
+                document.getElementById("btnIniciar").disabled = true;
+                document.getElementById("btnPausar").disabled = true;
+                document.getElementById("btnContinuar").disabled = true;
+                document.getElementById("btnRestablecer").disabled = false;
             }
-        }, 2000);
+        }, 1000);
     }
 }
 
